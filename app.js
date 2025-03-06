@@ -19,4 +19,3 @@ function  agregarAmigos() {
             alert("Por favor, inserte un nombre.");
         }
 }
-
