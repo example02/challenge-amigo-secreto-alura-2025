@@ -45,9 +45,18 @@ function sortearAmigos() {
     if(listaAmigos.length > 1 ) {
         indiceSorteado = Math.floor(Math.random()*listaAmigos.length);
         //console.log(listaAmigos[indiceSorteado]);
-        
+        mostrarResultado();
     } else {
         alert('Digite al menos los nombres de 2 de tus amigos')
     }
     
+}
+
+// Se realiza la función mostrar resultado.
+function mostrarResultado() {
+    let resultadoHTML = document.getElementById('resultado')
+    resultadoHTML.innerHTML = "";
+    let nuevoResultado =document.createElement("li");
+    nuevoResultado.textContent = `"El amigo elegido es: ${listaAmigos[indiceSorteado]}"`;
+    resultadoHTML.appendChild(nuevoResultado);
 }
