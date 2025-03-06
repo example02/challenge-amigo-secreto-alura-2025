@@ -18,4 +18,10 @@ function  agregarAmigos() {
         } else {
             alert("Por favor, inserte un nombre.");
         }
+    limpiarNombreCaja();
+}
+
+// Se crea la función limpiarCaja. 
+function limpiarNombreCaja() {
+    let textoCaja = document.querySelector('#amigo').value ='';
 }
