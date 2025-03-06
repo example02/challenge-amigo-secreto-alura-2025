@@ -38,5 +38,16 @@ function recorrerAmigos(lista) {
         listaHTML.appendChild(nuevoElemento);
     }
     
+}
 
+// se realiza la función sortear amigos. 
+function sortearAmigos() {
+    if(listaAmigos.length > 1 ) {
+        indiceSorteado = Math.floor(Math.random()*listaAmigos.length);
+        //console.log(listaAmigos[indiceSorteado]);
+        
+    } else {
+        alert('Digite al menos los nombres de 2 de tus amigos')
+    }
+    
 }
