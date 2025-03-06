@@ -49,7 +49,7 @@ function sortearAmigos() {
     } else {
         alert('Digite al menos los nombres de 2 de tus amigos')
     }
-    
+    vaciarListaHtml();
 }
 
 // Se realiza la función mostrar resultado.
@@ -59,4 +59,11 @@ function mostrarResultado() {
     let nuevoResultado =document.createElement("li");
     nuevoResultado.textContent = `"El amigo elegido es: ${listaAmigos[indiceSorteado]}"`;
     resultadoHTML.appendChild(nuevoResultado);
+}
+
+// sea realiza la función vaciar lista html y array listaAmigos
+function vaciarListaHtml(){
+    let listaVacia = document.getElementById('listaAmigos')
+    listaVacia.innerHTML = "";
+    listaAmigos = [];
 }
